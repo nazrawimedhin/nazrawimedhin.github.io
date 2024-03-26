@@ -567,7 +567,7 @@ circle p {
 /*---------portfolio--------*/
 
 .portfolio {
-  height: 60vh;
+  height: 90vh;
 }
 
 .portfolio h2 {
@@ -652,7 +652,7 @@ circle p {
 }
 
 .filter-item li {
-  width: 50%;
+  width: 100%;
   padding: 2px;
   float: left;
 }

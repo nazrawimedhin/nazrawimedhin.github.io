@@ -4,20 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--   owl font awesome   -->
+  <!--   font awesome   -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 
   <!--   css file   -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!--   owl carousel   -->
-  <link rel="stylesheet" href="css/owl.carousel.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <script src="js/jquery.js" charset="utf-8"></script>
-  <script src="js/jquery3.4.1.min.js" charset="utf-8"></script>
-  <script src="js/owl.carousel.js" charset="utf-8"></script>
-
-  <!-- meta info -->
+  <!-- site info -->
   <title>Nazrawi Medhin</title>
   <meta name="description" content="Nazrawi Medhin - A Front-End Web Developer">
   <meta name="og:title" content="Nazrawi Medhin"/>
@@ -594,70 +587,6 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-menu");
-
-    hamburger.addEventListener("click", mobileMenu);
-
-    function mobileMenu() {
-      hamburger.classList.toggle("active");
-      navMenu.classList.toggle("active");
-    }
-
-    window.addEventListener("scroll", function() {
-      var header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 0);
-    })
-  </script>
-
-  <script>
-    let sortBtn = document.querySelector('.filter-menu').children;
-    let sortItem = document.querySelector('.filter-item').children;
-
-    for (let i = 0; i < sortBtn.length; i++) {
-      sortBtn[i].addEventListener('click', function() {
-        for (let j = 0; j < sortBtn.length; j++) {
-          sortBtn[j].classList.remove('current');
-        }
-
-        this.classList.add('current');
-
-        let targetData = this.getAttribute('data-target');
-
-        for (let k = 0; k < sortItem.length; k++) {
-          sortItem[k].classList.remove('active');
-          sortItem[k].classList.add('delete');
-
-          if (sortItem[k].getAttribute('data-item') == targetData || targetData == "all") {
-            sortItem[k].classList.remove('delete');
-            sortItem[k].classList.add('active');
-          }
-        }
-      });
-    }
-  </script>
-
-  <script>
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: false,
-      dots: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 1
-        },
-        1000: {
-          items: 1
-        }
-      }
-    })
-  </script>
 
 </body>
 
